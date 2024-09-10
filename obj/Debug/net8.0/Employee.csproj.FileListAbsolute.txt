@@ -12,3 +12,4 @@ D:\PRN211\Abstract\Employee\obj\Debug\net8.0\refint\Employee.dll
 D:\PRN211\Abstract\Employee\obj\Debug\net8.0\Employee.pdb
 D:\PRN211\Abstract\Employee\obj\Debug\net8.0\Employee.genruntimeconfig.cache
 D:\PRN211\Abstract\Employee\obj\Debug\net8.0\ref\Employee.dll
+D:\PRN211\Abstract\Employee\obj\Debug\net8.0\Employee.sourcelink.json

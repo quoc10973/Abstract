@@ -10,42 +10,36 @@ namespace Employee
     {
         static void Main(string[] args)
         {
-            try
+            //cac
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
+
+            // create derived-class objects using object initializers
+            var salariedEmployee = new SalariedEmployee
             {
-                Console.OutputEncoding = System.Text.Encoding.UTF8;
+                firstName = "John",
+                lastName = "Smith",
+                socialSecurityNumber = "111-11-1111",
+                WeeklySalary = 800
+            };
 
-                // create derived-class objects using object initializers
-                var salariedEmployee = new SalariedEmployee
-                {
-                    firstName = "John",
-                    lastName = "Smith",
-                    socialSecurityNumber = "111-11-1111",
-                    WeeklySalary = 800
-                };
-
-                var commissionEmployee = new CommissionEmployee
-                {
-                    firstName = "Sue",
-                    lastName = "Jones",
-                    socialSecurityNumber = "333-33-3333",
-                    GrossSales = 10000,
-                    CommissionRate = 0.06
-                };
-
-                var basePlusCommissionEmployee = new BasePlusCommissionEmployee
-                {
-                    firstName = "Bob",
-                    lastName = "Lewis",
-                    socialSecurityNumber = "444-44-4444",
-                    GrossSales = 5000,
-                    CommissionRate = 0.04,
-                    BaseSalary = 300
-                };
-            }
-            catch (Exception ex)
+            var commissionEmployee = new CommissionEmployee
             {
-                Console.Error.WriteLine(ex.Message);
-            }
+                firstName = "Sue",
+                lastName = "Jones",
+                socialSecurityNumber = "333-33-3333",
+                GrossSales = 10000,
+                CommissionRate = 0.06
+            };
+
+            var basePlusCommissionEmployee = new BasePlusCommissionEmployee
+            {
+                firstName = "Bob",
+                lastName = "Lewis",
+                socialSecurityNumber = "444-44-4444",
+                GrossSales = 5000,
+                CommissionRate = 0.04,
+                BaseSalary = 300
+            };
 
             Console.WriteLine("Employees processed individually using static binding:\n");
 
@@ -89,6 +83,5 @@ namespace Employee
             baseClassRef.Print();
             Console.WriteLine($"earned ${baseClassRef.Earnings():F2}\n");
         }
-        
     }
     }
